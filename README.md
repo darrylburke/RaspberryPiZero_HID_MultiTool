@@ -37,5 +37,9 @@ The following pins are used
 |iOS | GND (Pin 14)  & GPIO 27|
 |Linux| GND (Pin 14)  & GPIO 23|
 
+## Install Instructions
 
+1. Copy the gadget directory to /root/gadget
+2. install the 2 rc files via the install.sh script in the gadget/rc directory
+3. set the pins and away you go
 
