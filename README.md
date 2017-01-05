@@ -68,7 +68,9 @@ INTERFACES="usb0"
 ## HID Keyboard.
    create and copy your duckberrypi script and place it /boot/payload.dd
    note the start script for hid has a way to customize/automate the copy. check hid/start.sh
-   *Note in progress, get it to use the script which can be placed in the storage bin file *
+  
+  The script will copy one of the 3 files that you have copied on the STORAGE bin file and run it based on the OS pin. there are 3 files "linux", "ios", and "windows" that you can customize.
+  
    
 ##
   
