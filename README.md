@@ -38,3 +38,4 @@ The following pins are used
 |Linux| GND (Pin 14)  & GPIO 23|
 
 
+
