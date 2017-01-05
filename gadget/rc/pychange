@@ -11,7 +11,7 @@
 case "$1" in 
     start)
         echo "Starting PyChange"
-        (cd /root/gadget;change.sh)
+        (cd /root/gadget;./change.sh)
         ;;
     stop)
         echo "Stopping PyChange"
