@@ -1,0 +1,25 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          pychange 
+# Required-Start:    
+# Required-Stop:     
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: changes the zero pi device based on the pins
+# Description:       changes the zero pi device based on the pins connected ont he pi, and reboots if different from last time.
+### END INIT INFO
+case "$1" in 
+    start)
+        echo "Starting PyChange"
+        (cd /root/gadget;change.sh)
+        ;;
+    stop)
+        echo "Stopping PyChange"
+        ;;
+    *)
+        echo "Usage: /etc/init.d/pychange start|stop"
+        exit 1
+        ;;
+esac
+
+exit 0

@@ -1,0 +1,27 @@
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          pyreboot 
+# Required-Start:    
+# Required-Stop:     
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: reboot on pin 21 short
+# Description:       reboots PiZero on Pin21 Short
+### END INIT INFO
+case "$1" in 
+    start)
+        echo "Starting REboot on pin 21 Monitor"
+        /usr/bin/touch /tmp/reboot
+        /root/gadget/reboot.py &
+        ;;
+    stop)
+        echo "Stopping reboot monitor"
+        killall reboot.py
+        ;;
+    *)
+        echo "Usage: /etc/init.d/reboot.sh start|stop"
+        exit 1
+        ;;
+esac
+
+exit 0
