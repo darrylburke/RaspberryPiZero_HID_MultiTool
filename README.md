@@ -52,17 +52,17 @@ The following pins are used
   
   install the isc dhcp server on the PI and use the following config 
   /etc/dhcp/dhcpd.conf
-'''
+```
 subnet 192.168.2.0 netmask 255.255.255.0 {
   range 192.168.2.10 192.168.2.20;
 }
-'''
+```
 /etc/default/isc-dhcp-server
- '''
+```
 DHCPD_CONF=/etc/dhcp/dhcpd.conf
 DHCPD_PID=/var/run/dhcpd.pid
 INTERFACES="usb0"
-'''
+```
   
   
 ## HID Keyboard.
