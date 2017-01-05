@@ -24,7 +24,7 @@
 
 defdelay=0
 #kb="/dev/hidg0 keyboard"
-kb="/dev/uhid keyboard"
+kb="/dev/hidg0 keyboard"
 
 last_cmd=""
 last_string=""
