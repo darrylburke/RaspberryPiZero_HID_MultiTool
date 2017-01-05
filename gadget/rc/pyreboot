@@ -12,6 +12,7 @@ case "$1" in
     start)
         echo "Starting REboot on pin 21 Monitor"
         /usr/bin/touch /tmp/reboot
+        (cd /root/gadget;./change.sh)
         /root/gadget/reboot.py &
         ;;
     stop)
