@@ -15,6 +15,11 @@ I used the GPIO Pins to allow the zPI to be configured on what *function* it sho
 
 The following pins are used
 
+## Reboot the Zero Pi
+| Function |  Pins |
+|----------|-------|
+|Shutdown| GND (Pin 39) & GPIO 21|
+
 ## Zero Pi Function
 
 | Function |  Pins |
@@ -23,4 +28,13 @@ The following pins are used
 |Ethernet | GPIO 19 & GPIO 16|
 |HID Keyboard| GPIO 19 & GPIO 26|
 |USB Storage| GPIO6 & GPIO 12|
-|-----------|-------|
+
+## Zero Pi OS identification
+
+| Function |  Pins |
+|----------|-------|
+|Windows| GND (Pin 14)  & GPIO 18|
+|iOS | GND (Pin 14)  & GPIO 27|
+|Linux| GND (Pin 14)  & GPIO 23|
+
+
