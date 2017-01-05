@@ -43,3 +43,17 @@ The following pins are used
 2. install the 2 rc files via the install.sh script in the gadget/rc directory
 3. set the pins and away you go
 
+# Mode Specific Notes
+
+## Ethernet
+
+  when setup as an ethernet device, the zPI will have the IP address of 192.16.2.2
+  *in progress is the setup of a DHCP server on the PI to assign an IP to the device attached*
+  
+## HID Keyboard.
+   create and copy your duckberrypi script and place it /boot/payload.dd
+   note the start script for hid has a way to customize/automate the copy. check hid/start.sh
+   *Note in progress, get it to use the script which can be placed in the storage bin file *
+   
+##
+  
